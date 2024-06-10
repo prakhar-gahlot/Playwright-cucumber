@@ -26,6 +26,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - uses: actions/checkout@v4
     - name: Set up environment variables
       env:
         LT_USERNAME: ${{ secrets.LT_USERNAME }}
