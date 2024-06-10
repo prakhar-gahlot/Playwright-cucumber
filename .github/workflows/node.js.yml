@@ -24,6 +24,8 @@ jobs:
         cache: 'npm'
     - name: Install dependencies
       run: npm i
+    - name: Give permission to cucumber
+      run: chmod +x node_modules/.bin/cucumber-js
       env:
         LT_USERNAME: ${{ secrets.LT_USERNAME }}
         LT_ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY }}
