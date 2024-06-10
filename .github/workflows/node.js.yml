@@ -28,7 +28,7 @@ jobs:
         LT_USERNAME: ${{ secrets.LT_USERNAME }}
         LT_ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY }}
     - name: Run tests
-      run: npm test
+      run: npm run test
       env:
         LT_USERNAME: ${{ secrets.LT_USERNAME }}
         LT_ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY }}
